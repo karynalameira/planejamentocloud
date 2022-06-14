@@ -1,0 +1,172 @@
+html {
+    font-size: 62.5%;
+}
+
+body { 
+    background-color: #F2F2F2;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.main-container {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    display: block;
+    float: left;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background: #ffffff;
+    display: block;
+    float: left;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid #454545;
+}
+
+header img {
+    height: 20rem;
+    width: 20rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: #59D9D9;
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #59D9D9;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #59D9D9;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+h4 {
+    font-size: 1.6rem;
+    color: #59D9D9;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #454545
+}
+
+ol {
+    margin-left: 30px;
+    
+}
+
+ol li {
+    font-size: 1.4rem;
+    color: #454545
+}
+
+section {
+    background-color: #ffffff;
+    display: block;
+    float: left;
+    font-size: 1.5rem; /* equivalente a 15px */
+    padding: 20px;
+    width: 100%;
+}
+
+section nav {
+    display: block;
+    float: left;
+    width: 20%;
+}
+
+nav li {
+    background-color: #f8f8f8;
+    margin: 2px 20px 2px 0;
+    padding: 10px;
+}
+
+nav li:hover {
+    background-color: #f2f1f1;
+}
+
+nav a {
+    text-decoration: none;
+    color: #454545;
+
+}
+
+nav a:hover {
+    color: #3c3c3c;
+}
+
+section article {
+    display: block;
+    float: left;
+    width: 60%;
+}
+
+footer {
+    background-color: #307373;
+    display: block;
+    float: left;
+    padding: 20px;
+    width: 100%;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+footer smal {
+    font-size: 80%;
+    display: block;
+}
+
+
+/*Mobile*/
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;  
+        flex-direction: column;
+    }   
+
+    header img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    article img {
+
+        height: 15rem;
+        width: 25rem;
+    }
+
+    section h1, h2, h3, h4, p, ol, li {
+        font-size: 1.5rem; /* equivalente a 15px */
+        width: 80%;
+       
+
+        }
+
+
+    
+
+}
