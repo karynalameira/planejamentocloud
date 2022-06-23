@@ -5,13 +5,14 @@ html {
 body { 
     background-color: #F2F2F2;
     font-family: 'Poppins', sans-serif;
-    
+    margin: auto;
 }
 
 .main-container {
-    display: block;
+    
+    position: relative;
     width: 100%;
-    margin: 0 auto;
+    margin: 0auto;
 }
 
 .container {
@@ -19,7 +20,6 @@ body {
     float: left;
     padding: 10px;
     width: 100%;
-    margin: 0 auto;
 }
 
 header {
@@ -118,7 +118,7 @@ nav a:hover {
 section article {
     display: block;
     float: left;
-    width: 60%;
+    width: 50%;
 }
 
 footer {
@@ -140,12 +140,21 @@ footer smal {
 }
 
 
+.cog-abuse.cog-wrapper {
+    visibility: hidden !important;
+}
+
+
 /*Mobile*/
 
 @media screen and (max-width: 768px) {
+    #navbar {
+        margin-right: 22px;
+    }
+    
     nav ul {
         justify-content: center;  
-        flex-direction: column;
+        
     }   
 
     header img {
@@ -154,19 +163,11 @@ footer smal {
     }
 
     article img {
-
         height: 15rem;
         width: 25rem;
     }
 
     section h1, h2, h3, h4, p, ol, li {
         font-size: 1.5rem; /* equivalente a 15px */
-        width: 80%;
-       
-
-        }
-
-
-    
-
-}
+        width: 90%;
+    }
