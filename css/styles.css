@@ -9,17 +9,17 @@ body {
 }
 
 .main-container {
-    
-    position: relative;
-    width: 100%;
-    margin: 0auto;
+    display: block;
+    width: 100vw;
+    margin: 0 auto;
 }
 
 .container {
     display: block;
     float: left;
-    padding: 10px;
-    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1198px;
 }
 
 header {
@@ -68,6 +68,30 @@ p {
     margin-bottom: 10px;
     line-height: 1.4;
     color: #454545
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#tenho-interesse {
+    background-color: #f8f8f8;
+    width: 100%;
+}
+
+#tenho-interesse form,
+.cog-form__content {
+    background-color: #f8f8f8 !important;
+}
+
+#tenho-interesse .cog-cognito--styled h1, 
+#tenho-interesse .cog-label {
+    color: #3c3c3c;
+}
+
+#tenho-interesse h1{
+    color: #3c3c3c;
 }
 
 ol {
@@ -139,6 +163,10 @@ footer smal {
     display: block;
 }
 
+.cognito {
+    height: 450px !important;
+    overflow: hidden !important;
+}
 
 .cog-abuse.cog-wrapper {
     visibility: hidden !important;
