@@ -175,7 +175,7 @@ footer smal {
 
 /*Mobile*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {   
     #navbar {
         margin-right: 22px;
     }
