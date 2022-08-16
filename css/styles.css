@@ -3,64 +3,65 @@ html {
 }
 
 body { 
-    background-color: #F2F2F2;
+    background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
     margin: auto;
+    line-height: normal;
 }
 
 .main-container {
     display: block;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .container {
     display: block;
     float: left;
-    padding: 20px;
+    padding: 0;
     margin: 0 auto;
     max-width: 1198px;
+    width: 98%;
 }
 
 header {
     background: #ffffff;
     display: block;
     float: left;
-    padding: 20px;
     width: 100%;
     border-bottom: 1px solid #454545;
 }
 
 header img {
-    height: 25rem;
-    width: 25rem;
+    height: 10rem;
+    width: 28rem;
 }
 
 h1 {
     font-size: 2.4rem;
-    color: #59D9D9;
+    color: #3c3c3c;
     margin-bottom: 10px;
     margin-bottom: 20px;
-
 }
 
 h2 {
     font-size: 2rem;
-    color: #59D9D9;
+    color: #3c3c3c;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
 h3 {
     font-size: 1.8rem;
-    color: #59D9D9;
+    color: #3c3c3c;
     margin-bottom: 20px;
     padding-top: 10px;
 }
 
 h4 {
     font-size: 1.6rem;
-    color: #59D9D9;
+    color: #3c3c3c;
     margin-bottom: 10px;
     padding-top: 10px;
 }
@@ -101,7 +102,7 @@ section {
     display: block;
     float: left;
     font-size: 1.5rem; /* equivalente a 15px */
-    padding: 20px;
+    padding: 20px 20px 0;
     width: 100%;
 }
 
@@ -112,28 +113,26 @@ section nav {
 
 nav li {
     background-color: #f8f8f8;
-    box-shadow: #307373 4px 4px 0px;
+    box-shadow: #3c3c3c 4px 4px 0px;
     border-radius: 8px;
     transition: transform 200ms, box-shadow 200ms;
     margin: 5px 20px 5px 0;
     padding: 15px;
-    
 }
     
 nav li:active {
     transform: translate(4px) translate(4px);
-    box-shadow: #307373 0px 0px 0px;
+    box-shadow: #3c3c3c 0px 0px 0px;
 }
 
 
 nav li:hover {
-    background-color: #6ae8e8;
+    background-color: #d4d4d4;
 }
 
 nav a {
     text-decoration: none;
     color: #454545;
-
 }
 
 section article {
@@ -143,10 +142,10 @@ section article {
 }
 
 footer {
-    background-color: #307373;
+    background-color: #3c3c3c;
     display: block;
     float: left;
-    padding: 20px;
+    padding: 20px 20px 0;
     width: 100%;
 }
 
@@ -188,7 +187,6 @@ footer smal {
         justify-content: space-evenly;
         margin-bottom: 25px;
         margin-right: 25px;
-        
     }
 
     nav ul {
@@ -204,9 +202,7 @@ footer smal {
         height: 8rem;
         width: 20rem;
     }
-
-    
-    
+   
     #tenho-interesse {
         width: 90%;
     }
@@ -220,7 +216,6 @@ footer smal {
     section h1, h2, h3, h4, p, ol, li {
         font-size: 1.5rem; /* equivalente a 15px */
         width: 85%;
-        
     }
     
     section {
@@ -244,7 +239,6 @@ footer smal {
         padding-left: 40px;
     }
 
-
     .container article {
         padding-left: 20px;
     }
@@ -252,7 +246,91 @@ footer smal {
     #navbar {        
         justify-content: space-evenly;
         margin-bottom: 25px;
-        margin-right: 25px;
-        
+        margin-right: 25px; 
     }
+}
+
+#banner {
+    background-image: url(../images/banner.png.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* para imagen cobrir toda area */
+    width: 100vw;
+    height: 60vh;
+}
+
+.legenda-container {
+    width: 50vh;
+    float: right;
+    margin: 8vh 20vh 0 0;
+
+}
+
+.legenda {
+    background-color: rgba(255, 255, 255, .6);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 2rem;  
+}
+
+
+.legenda h5, h4 {
+    color: #3c3c3c;
+    line-height: 1.8;
+}
+
+.button-cta {
+    border-radius: 25px;
+    display: inline;
+    background-color: orangered;
+    color: #ffffff;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 1px 1px 4px #3c3c3c;
+    padding: 10px 15px;
+    width: auto;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    text-decoration: none;
+    font-weight: 300;
+    float: left;
+}
+
+#planejamento {
+    background-color: #f8f8f8;
+    padding: 40px 0px 40px 40px;
+
+}
+
+#planejamento p, img {
+    width: 45%;
+    display: block;
+    float: left;
+    padding: 20px;
+}
+
+#duvidas {
+
+        width: 45%;
+        display: block;
+        float: left;
+        padding: 40px 0px 40px 40px;
+}
+
+dl {
+    margin: 20px 0;
+}
+
+dt {
+    font-family: 'open sans';
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+
 }
