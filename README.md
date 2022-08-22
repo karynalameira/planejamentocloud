@@ -23,3 +23,7 @@ Inbound Marketing
 - Post para redes sociais: texto + foto + url curta
 - Incluir hospedagem (servidor web)
 - Git - histórico de evolução (commits detalhados)
+
+
+- URL https://bityli.com/planejamentocloud
+

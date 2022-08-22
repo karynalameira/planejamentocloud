@@ -112,27 +112,25 @@ section nav {
 }
 
 nav li {
-    background-color: #f8f8f8;
-    box-shadow: #3c3c3c 4px 4px 0px;
-    border-radius: 8px;
+    background-color: rgb(253, 67, 0);
+    border-radius: 25px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
     transition: transform 200ms, box-shadow 200ms;
-    margin: 5px 20px 5px 0;
+    margin: 8px 20px 5px 0;
     padding: 15px;
+    box-shadow: 1px 1px 4px #3c3c3c;
 }
     
-nav li:active {
-    transform: translate(4px) translate(4px);
-    box-shadow: #3c3c3c 0px 0px 0px;
-}
-
 
 nav li:hover {
-    background-color: #d4d4d4;
+    background-color: rgb(255, 81, 17);
 }
 
 nav a {
     text-decoration: none;
-    color: #454545;
+    color: #ffffff;
 }
 
 section article {
@@ -175,80 +173,6 @@ footer smal {
     flex-direction: row;
 }
 
-/*Mobile*/
-
-@media screen and (max-width: 428px) {   
-    .container img {
-        height: 20rem;
-        width: 20rem;
-    }
-
-    #navbar {        
-        justify-content: space-evenly;
-        margin-bottom: 25px;
-        margin-right: 25px;
-    }
-
-    nav ul {
-        justify-content: center;  
-    }
-       
-    header img {
-        height: 10rem;
-        width: 10rem;
-    }
-
-    article img {
-        height: 8rem;
-        width: 20rem;
-    }
-   
-    #tenho-interesse {
-        width: 90%;
-    }
-    
-    section article {
-        display: block;
-        float: left;
-        width: 100%;
-    }
-
-    section h1, h2, h3, h4, p, ol, li {
-        font-size: 1.5rem; /* equivalente a 15px */
-        width: 85%;
-    }
-    
-    section {
-        display: grid;   
-    }
-}
-
-@media screen and (max-width: 810px) {
-    section article {
-        font-size: 1.5rem; /* equivalente a 15px */
-        width: 100%;
-    }
-
-    section article {
-        display: block;
-        float: left;
-        width: 90%;
-    }
-    
-    .article {
-        padding-left: 40px;
-    }
-
-    .container article {
-        padding-left: 20px;
-    }
-
-    #navbar {        
-        justify-content: space-evenly;
-        margin-bottom: 25px;
-        margin-right: 25px; 
-    }
-}
 
 #banner {
     background-image: url(../images/banner.png.jpg);
@@ -282,7 +206,7 @@ footer smal {
 .button-cta {
     border-radius: 25px;
     display: inline;
-    background-color: orangered;
+    background-color: rgb(253, 67, 0);
     color: #ffffff;
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -311,11 +235,10 @@ footer smal {
 }
 
 #duvidas {
-
-        width: 45%;
-        display: block;
-        float: left;
-        padding: 40px 0px 40px 40px;
+    width: 45%;
+    display: block;
+    float: left;
+    padding: 40px 0px 40px 40px;
 }
 
 dl {
@@ -332,5 +255,126 @@ dd {
     margin-left: 20px;
     margin-bottom: 20px;
     font-size: 1.4rem;
+
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 428px) {  
+    .legenda-container {
+        width: 42vh;
+        float: right;
+        margin: 6vh 20vh 0 0;
+    
+    }
+
+    .container img {
+        height: 8rem;
+        width: 20rem;
+    }
+
+    #planejamento img {
+        height: 10rem;
+        width: 22rem;
+    }
+
+    #planejamento p, img {
+        width: 70%;
+        display: block;
+        float: left;
+        padding: 20px;
+    }
+    
+    #navbar {        
+        justify-content: space-evenly;
+        margin-bottom: 25px;
+        margin-right: 25px;
+    }
+
+    nav ul {
+        justify-content: center;  
+    }
+       
+    header img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    article img {
+        height: 10rem;
+        width: 22rem;
+    }
+
+    #duvidas {
+        width: 80%;
+        display: block;
+        float: left;
+        padding: 40px 0px 40px 40px;
+    }
+
+    #tenho-interesse {
+        width: 90%;
+    }
+    
+    section article {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    section h1, h2, h3, h4, ol, li {
+        font-size: 1.5rem; /* equivalente a 15px */
+        width: 85%;
+    }
+    
+    section {
+        display: grid;   
+    }
+
+}
+
+@media screen and (max-width: 810px) {
+    section article {
+        font-size: 1.5rem; /* equivalente a 15px */
+        width: 100%;
+    }
+
+    section article {
+        display: block;
+        float: left;
+        width: 90%;
+    }
+    
+    .article {
+        padding: 15px;
+    }
+
+    .container article {
+        padding-left: 20px;
+    }
+
+    #navbar {        
+        justify-content: space-evenly;
+        margin-bottom: 25px;
+        margin-right: 25px; 
+    }
+
+    .button-cta {
+        border-radius: 25px;
+        display: inline;
+        background-color: rgb(253, 67, 0);
+        color: #ffffff;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-align: center;
+        box-shadow: 1px 1px 4px #3c3c3c;
+        padding: 10px 15px;
+        width: auto;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+        text-decoration: none;
+        font-weight: 300;
+        float: left;
+    }
 
 }
